@@ -50,24 +50,25 @@ namespace Among_Us_ServerSetting
             this.label1 = new System.Windows.Forms.Label();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.ButtonMore = new System.Windows.Forms.Button();
-            this.groupBoxEmergency = new System.Windows.Forms.GroupBox();
-            this.numericEmegency = new System.Windows.Forms.NumericUpDown();
-            this.ButtonEmergency = new System.Windows.Forms.Button();
-            this.groupBoxDiscussion = new System.Windows.Forms.GroupBox();
-            this.numericDiscussion = new System.Windows.Forms.NumericUpDown();
-            this.ButtonDiscussion = new System.Windows.Forms.Button();
-            this.groupBoxVoteTime = new System.Windows.Forms.GroupBox();
-            this.numericVoteTime = new System.Windows.Forms.NumericUpDown();
-            this.ButtonVoteTime = new System.Windows.Forms.Button();
-            this.groupBoxPlayerHat = new System.Windows.Forms.GroupBox();
-            this.numericPlayerHat = new System.Windows.Forms.NumericUpDown();
-            this.ButtonPlayerHat = new System.Windows.Forms.Button();
-            this.groupBoxPlayerPet = new System.Windows.Forms.GroupBox();
-            this.numericPlayerPet = new System.Windows.Forms.NumericUpDown();
-            this.ButtonPlayerPet = new System.Windows.Forms.Button();
             this.groupBoxPlayerCloth = new System.Windows.Forms.GroupBox();
             this.numericPlayerCloth = new System.Windows.Forms.NumericUpDown();
             this.ButtonPlayerCloth = new System.Windows.Forms.Button();
+            this.groupBoxPlayerPet = new System.Windows.Forms.GroupBox();
+            this.numericPlayerPet = new System.Windows.Forms.NumericUpDown();
+            this.ButtonPlayerPet = new System.Windows.Forms.Button();
+            this.groupBoxPlayerHat = new System.Windows.Forms.GroupBox();
+            this.numericPlayerHat = new System.Windows.Forms.NumericUpDown();
+            this.ButtonPlayerHat = new System.Windows.Forms.Button();
+            this.groupBoxVoteTime = new System.Windows.Forms.GroupBox();
+            this.numericVoteTime = new System.Windows.Forms.NumericUpDown();
+            this.ButtonVoteTime = new System.Windows.Forms.Button();
+            this.groupBoxDiscussion = new System.Windows.Forms.GroupBox();
+            this.numericDiscussion = new System.Windows.Forms.NumericUpDown();
+            this.ButtonDiscussion = new System.Windows.Forms.Button();
+            this.groupBoxEmergency = new System.Windows.Forms.GroupBox();
+            this.numericEmegency = new System.Windows.Forms.NumericUpDown();
+            this.ButtonEmergency = new System.Windows.Forms.Button();
+            this.ButtonReload = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.numericImpostor)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericPlayerSpeed)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericImpostorVison)).BeginInit();
@@ -83,18 +84,18 @@ namespace Among_Us_ServerSetting
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
             this.splitContainer1.SuspendLayout();
-            this.groupBoxEmergency.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericEmegency)).BeginInit();
-            this.groupBoxDiscussion.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericDiscussion)).BeginInit();
-            this.groupBoxVoteTime.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericVoteTime)).BeginInit();
-            this.groupBoxPlayerHat.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericPlayerHat)).BeginInit();
-            this.groupBoxPlayerPet.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericPlayerPet)).BeginInit();
             this.groupBoxPlayerCloth.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericPlayerCloth)).BeginInit();
+            this.groupBoxPlayerPet.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericPlayerPet)).BeginInit();
+            this.groupBoxPlayerHat.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericPlayerHat)).BeginInit();
+            this.groupBoxVoteTime.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericVoteTime)).BeginInit();
+            this.groupBoxDiscussion.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericDiscussion)).BeginInit();
+            this.groupBoxEmergency.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericEmegency)).BeginInit();
             this.SuspendLayout();
             // 
             // comboBoxMap
@@ -430,6 +431,7 @@ namespace Among_Us_ServerSetting
             // splitContainer1.Panel1
             // 
             this.splitContainer1.Panel1.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.splitContainer1.Panel1.Controls.Add(this.ButtonReload);
             this.splitContainer1.Panel1.Controls.Add(this.ButtonMore);
             this.splitContainer1.Panel1.Controls.Add(this.label1);
             this.splitContainer1.Panel1.Controls.Add(this.groupBoxMap);
@@ -465,236 +467,6 @@ namespace Among_Us_ServerSetting
             this.ButtonMore.TabIndex = 26;
             this.ButtonMore.UseVisualStyleBackColor = true;
             this.ButtonMore.Click += new System.EventHandler(this.ButtonMore_Click);
-            // 
-            // groupBoxEmergency
-            // 
-            this.groupBoxEmergency.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.groupBoxEmergency.Controls.Add(this.numericEmegency);
-            this.groupBoxEmergency.Controls.Add(this.ButtonEmergency);
-            this.groupBoxEmergency.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.groupBoxEmergency.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.groupBoxEmergency.Location = new System.Drawing.Point(19, 8);
-            this.groupBoxEmergency.Margin = new System.Windows.Forms.Padding(2);
-            this.groupBoxEmergency.Name = "groupBoxEmergency";
-            this.groupBoxEmergency.Padding = new System.Windows.Forms.Padding(1);
-            this.groupBoxEmergency.Size = new System.Drawing.Size(200, 46);
-            this.groupBoxEmergency.TabIndex = 23;
-            this.groupBoxEmergency.TabStop = false;
-            this.groupBoxEmergency.Text = "Emergency";
-            // 
-            // numericEmegency
-            // 
-            this.numericEmegency.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
-            this.numericEmegency.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.numericEmegency.ForeColor = System.Drawing.Color.Lime;
-            this.numericEmegency.Location = new System.Drawing.Point(65, 17);
-            this.numericEmegency.Name = "numericEmegency";
-            this.numericEmegency.Size = new System.Drawing.Size(36, 20);
-            this.numericEmegency.TabIndex = 3;
-            this.numericEmegency.Value = new decimal(new int[] {
-            2,
-            0,
-            0,
-            0});
-            // 
-            // ButtonEmergency
-            // 
-            this.ButtonEmergency.BackColor = System.Drawing.Color.LightSeaGreen;
-            this.ButtonEmergency.Cursor = System.Windows.Forms.Cursors.Default;
-            this.ButtonEmergency.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.ButtonEmergency.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ButtonEmergency.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.ButtonEmergency.Location = new System.Drawing.Point(107, 14);
-            this.ButtonEmergency.Name = "ButtonEmergency";
-            this.ButtonEmergency.Size = new System.Drawing.Size(81, 23);
-            this.ButtonEmergency.TabIndex = 11;
-            this.ButtonEmergency.Text = "Change";
-            this.ButtonEmergency.UseVisualStyleBackColor = false;
-            this.ButtonEmergency.Click += new System.EventHandler(this.ButtonEmergency_Click);
-            // 
-            // groupBoxDiscussion
-            // 
-            this.groupBoxDiscussion.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.groupBoxDiscussion.Controls.Add(this.numericDiscussion);
-            this.groupBoxDiscussion.Controls.Add(this.ButtonDiscussion);
-            this.groupBoxDiscussion.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.groupBoxDiscussion.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.groupBoxDiscussion.Location = new System.Drawing.Point(19, 58);
-            this.groupBoxDiscussion.Margin = new System.Windows.Forms.Padding(2);
-            this.groupBoxDiscussion.Name = "groupBoxDiscussion";
-            this.groupBoxDiscussion.Padding = new System.Windows.Forms.Padding(1);
-            this.groupBoxDiscussion.Size = new System.Drawing.Size(200, 46);
-            this.groupBoxDiscussion.TabIndex = 23;
-            this.groupBoxDiscussion.TabStop = false;
-            this.groupBoxDiscussion.Text = "Discussion";
-            // 
-            // numericDiscussion
-            // 
-            this.numericDiscussion.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
-            this.numericDiscussion.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.numericDiscussion.ForeColor = System.Drawing.Color.Lime;
-            this.numericDiscussion.Location = new System.Drawing.Point(65, 17);
-            this.numericDiscussion.Name = "numericDiscussion";
-            this.numericDiscussion.Size = new System.Drawing.Size(36, 20);
-            this.numericDiscussion.TabIndex = 3;
-            this.numericDiscussion.Value = new decimal(new int[] {
-            2,
-            0,
-            0,
-            0});
-            // 
-            // ButtonDiscussion
-            // 
-            this.ButtonDiscussion.BackColor = System.Drawing.Color.LightSeaGreen;
-            this.ButtonDiscussion.Cursor = System.Windows.Forms.Cursors.Default;
-            this.ButtonDiscussion.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.ButtonDiscussion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ButtonDiscussion.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.ButtonDiscussion.Location = new System.Drawing.Point(107, 14);
-            this.ButtonDiscussion.Name = "ButtonDiscussion";
-            this.ButtonDiscussion.Size = new System.Drawing.Size(81, 23);
-            this.ButtonDiscussion.TabIndex = 11;
-            this.ButtonDiscussion.Text = "Change";
-            this.ButtonDiscussion.UseVisualStyleBackColor = false;
-            this.ButtonDiscussion.Click += new System.EventHandler(this.ButtonDiscussion_Click);
-            // 
-            // groupBoxVoteTime
-            // 
-            this.groupBoxVoteTime.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.groupBoxVoteTime.Controls.Add(this.numericVoteTime);
-            this.groupBoxVoteTime.Controls.Add(this.ButtonVoteTime);
-            this.groupBoxVoteTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.groupBoxVoteTime.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.groupBoxVoteTime.Location = new System.Drawing.Point(19, 108);
-            this.groupBoxVoteTime.Margin = new System.Windows.Forms.Padding(2);
-            this.groupBoxVoteTime.Name = "groupBoxVoteTime";
-            this.groupBoxVoteTime.Padding = new System.Windows.Forms.Padding(1);
-            this.groupBoxVoteTime.Size = new System.Drawing.Size(200, 46);
-            this.groupBoxVoteTime.TabIndex = 23;
-            this.groupBoxVoteTime.TabStop = false;
-            this.groupBoxVoteTime.Text = "Vote Time";
-            // 
-            // numericVoteTime
-            // 
-            this.numericVoteTime.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
-            this.numericVoteTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.numericVoteTime.ForeColor = System.Drawing.Color.Lime;
-            this.numericVoteTime.Location = new System.Drawing.Point(65, 17);
-            this.numericVoteTime.Name = "numericVoteTime";
-            this.numericVoteTime.Size = new System.Drawing.Size(36, 20);
-            this.numericVoteTime.TabIndex = 3;
-            this.numericVoteTime.Value = new decimal(new int[] {
-            2,
-            0,
-            0,
-            0});
-            // 
-            // ButtonVoteTime
-            // 
-            this.ButtonVoteTime.BackColor = System.Drawing.Color.LightSeaGreen;
-            this.ButtonVoteTime.Cursor = System.Windows.Forms.Cursors.Default;
-            this.ButtonVoteTime.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.ButtonVoteTime.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ButtonVoteTime.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.ButtonVoteTime.Location = new System.Drawing.Point(107, 14);
-            this.ButtonVoteTime.Name = "ButtonVoteTime";
-            this.ButtonVoteTime.Size = new System.Drawing.Size(81, 23);
-            this.ButtonVoteTime.TabIndex = 11;
-            this.ButtonVoteTime.Text = "Change ";
-            this.ButtonVoteTime.UseVisualStyleBackColor = false;
-            this.ButtonVoteTime.Click += new System.EventHandler(this.ButtonVoteTime_Click);
-            // 
-            // groupBoxPlayerHat
-            // 
-            this.groupBoxPlayerHat.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.groupBoxPlayerHat.Controls.Add(this.numericPlayerHat);
-            this.groupBoxPlayerHat.Controls.Add(this.ButtonPlayerHat);
-            this.groupBoxPlayerHat.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.groupBoxPlayerHat.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.groupBoxPlayerHat.Location = new System.Drawing.Point(19, 158);
-            this.groupBoxPlayerHat.Margin = new System.Windows.Forms.Padding(2);
-            this.groupBoxPlayerHat.Name = "groupBoxPlayerHat";
-            this.groupBoxPlayerHat.Padding = new System.Windows.Forms.Padding(1);
-            this.groupBoxPlayerHat.Size = new System.Drawing.Size(200, 46);
-            this.groupBoxPlayerHat.TabIndex = 23;
-            this.groupBoxPlayerHat.TabStop = false;
-            this.groupBoxPlayerHat.Text = "PlayerHat";
-            // 
-            // numericPlayerHat
-            // 
-            this.numericPlayerHat.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
-            this.numericPlayerHat.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.numericPlayerHat.ForeColor = System.Drawing.Color.Lime;
-            this.numericPlayerHat.Location = new System.Drawing.Point(65, 17);
-            this.numericPlayerHat.Name = "numericPlayerHat";
-            this.numericPlayerHat.Size = new System.Drawing.Size(36, 20);
-            this.numericPlayerHat.TabIndex = 3;
-            this.numericPlayerHat.Value = new decimal(new int[] {
-            2,
-            0,
-            0,
-            0});
-            // 
-            // ButtonPlayerHat
-            // 
-            this.ButtonPlayerHat.BackColor = System.Drawing.Color.LightSeaGreen;
-            this.ButtonPlayerHat.Cursor = System.Windows.Forms.Cursors.Default;
-            this.ButtonPlayerHat.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.ButtonPlayerHat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ButtonPlayerHat.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.ButtonPlayerHat.Location = new System.Drawing.Point(107, 14);
-            this.ButtonPlayerHat.Name = "ButtonPlayerHat";
-            this.ButtonPlayerHat.Size = new System.Drawing.Size(81, 23);
-            this.ButtonPlayerHat.TabIndex = 11;
-            this.ButtonPlayerHat.Text = "Change";
-            this.ButtonPlayerHat.UseVisualStyleBackColor = false;
-            this.ButtonPlayerHat.Click += new System.EventHandler(this.ButtonPlayerHat_Click);
-            // 
-            // groupBoxPlayerPet
-            // 
-            this.groupBoxPlayerPet.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.groupBoxPlayerPet.Controls.Add(this.numericPlayerPet);
-            this.groupBoxPlayerPet.Controls.Add(this.ButtonPlayerPet);
-            this.groupBoxPlayerPet.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.groupBoxPlayerPet.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.groupBoxPlayerPet.Location = new System.Drawing.Point(19, 208);
-            this.groupBoxPlayerPet.Margin = new System.Windows.Forms.Padding(2);
-            this.groupBoxPlayerPet.Name = "groupBoxPlayerPet";
-            this.groupBoxPlayerPet.Padding = new System.Windows.Forms.Padding(1);
-            this.groupBoxPlayerPet.Size = new System.Drawing.Size(200, 46);
-            this.groupBoxPlayerPet.TabIndex = 23;
-            this.groupBoxPlayerPet.TabStop = false;
-            this.groupBoxPlayerPet.Text = "PlayerPet";
-            // 
-            // numericPlayerPet
-            // 
-            this.numericPlayerPet.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
-            this.numericPlayerPet.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.numericPlayerPet.ForeColor = System.Drawing.Color.Lime;
-            this.numericPlayerPet.Location = new System.Drawing.Point(65, 17);
-            this.numericPlayerPet.Name = "numericPlayerPet";
-            this.numericPlayerPet.Size = new System.Drawing.Size(36, 20);
-            this.numericPlayerPet.TabIndex = 3;
-            this.numericPlayerPet.Value = new decimal(new int[] {
-            2,
-            0,
-            0,
-            0});
-            // 
-            // ButtonPlayerPet
-            // 
-            this.ButtonPlayerPet.BackColor = System.Drawing.Color.LightSeaGreen;
-            this.ButtonPlayerPet.Cursor = System.Windows.Forms.Cursors.Default;
-            this.ButtonPlayerPet.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.ButtonPlayerPet.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ButtonPlayerPet.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.ButtonPlayerPet.Location = new System.Drawing.Point(107, 14);
-            this.ButtonPlayerPet.Name = "ButtonPlayerPet";
-            this.ButtonPlayerPet.Size = new System.Drawing.Size(81, 23);
-            this.ButtonPlayerPet.TabIndex = 11;
-            this.ButtonPlayerPet.Text = "Change";
-            this.ButtonPlayerPet.UseVisualStyleBackColor = false;
-            this.ButtonPlayerPet.Click += new System.EventHandler(this.ButtonPlayerPet_Click);
             // 
             // groupBoxPlayerCloth
             // 
@@ -742,13 +514,258 @@ namespace Among_Us_ServerSetting
             this.ButtonPlayerCloth.UseVisualStyleBackColor = false;
             this.ButtonPlayerCloth.Click += new System.EventHandler(this.ButtonPlayerCloth_Click);
             // 
+            // groupBoxPlayerPet
+            // 
+            this.groupBoxPlayerPet.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.groupBoxPlayerPet.Controls.Add(this.numericPlayerPet);
+            this.groupBoxPlayerPet.Controls.Add(this.ButtonPlayerPet);
+            this.groupBoxPlayerPet.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.groupBoxPlayerPet.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.groupBoxPlayerPet.Location = new System.Drawing.Point(19, 208);
+            this.groupBoxPlayerPet.Margin = new System.Windows.Forms.Padding(2);
+            this.groupBoxPlayerPet.Name = "groupBoxPlayerPet";
+            this.groupBoxPlayerPet.Padding = new System.Windows.Forms.Padding(1);
+            this.groupBoxPlayerPet.Size = new System.Drawing.Size(200, 46);
+            this.groupBoxPlayerPet.TabIndex = 23;
+            this.groupBoxPlayerPet.TabStop = false;
+            this.groupBoxPlayerPet.Text = "PlayerPet";
+            // 
+            // numericPlayerPet
+            // 
+            this.numericPlayerPet.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
+            this.numericPlayerPet.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.numericPlayerPet.ForeColor = System.Drawing.Color.Lime;
+            this.numericPlayerPet.Location = new System.Drawing.Point(65, 17);
+            this.numericPlayerPet.Name = "numericPlayerPet";
+            this.numericPlayerPet.Size = new System.Drawing.Size(36, 20);
+            this.numericPlayerPet.TabIndex = 3;
+            this.numericPlayerPet.Value = new decimal(new int[] {
+            2,
+            0,
+            0,
+            0});
+            // 
+            // ButtonPlayerPet
+            // 
+            this.ButtonPlayerPet.BackColor = System.Drawing.Color.LightSeaGreen;
+            this.ButtonPlayerPet.Cursor = System.Windows.Forms.Cursors.Default;
+            this.ButtonPlayerPet.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.ButtonPlayerPet.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ButtonPlayerPet.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.ButtonPlayerPet.Location = new System.Drawing.Point(107, 14);
+            this.ButtonPlayerPet.Name = "ButtonPlayerPet";
+            this.ButtonPlayerPet.Size = new System.Drawing.Size(81, 23);
+            this.ButtonPlayerPet.TabIndex = 11;
+            this.ButtonPlayerPet.Text = "Change";
+            this.ButtonPlayerPet.UseVisualStyleBackColor = false;
+            this.ButtonPlayerPet.Click += new System.EventHandler(this.ButtonPlayerPet_Click);
+            // 
+            // groupBoxPlayerHat
+            // 
+            this.groupBoxPlayerHat.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.groupBoxPlayerHat.Controls.Add(this.numericPlayerHat);
+            this.groupBoxPlayerHat.Controls.Add(this.ButtonPlayerHat);
+            this.groupBoxPlayerHat.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.groupBoxPlayerHat.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.groupBoxPlayerHat.Location = new System.Drawing.Point(19, 158);
+            this.groupBoxPlayerHat.Margin = new System.Windows.Forms.Padding(2);
+            this.groupBoxPlayerHat.Name = "groupBoxPlayerHat";
+            this.groupBoxPlayerHat.Padding = new System.Windows.Forms.Padding(1);
+            this.groupBoxPlayerHat.Size = new System.Drawing.Size(200, 46);
+            this.groupBoxPlayerHat.TabIndex = 23;
+            this.groupBoxPlayerHat.TabStop = false;
+            this.groupBoxPlayerHat.Text = "PlayerHat";
+            // 
+            // numericPlayerHat
+            // 
+            this.numericPlayerHat.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
+            this.numericPlayerHat.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.numericPlayerHat.ForeColor = System.Drawing.Color.Lime;
+            this.numericPlayerHat.Location = new System.Drawing.Point(65, 17);
+            this.numericPlayerHat.Name = "numericPlayerHat";
+            this.numericPlayerHat.Size = new System.Drawing.Size(36, 20);
+            this.numericPlayerHat.TabIndex = 3;
+            this.numericPlayerHat.Value = new decimal(new int[] {
+            2,
+            0,
+            0,
+            0});
+            // 
+            // ButtonPlayerHat
+            // 
+            this.ButtonPlayerHat.BackColor = System.Drawing.Color.LightSeaGreen;
+            this.ButtonPlayerHat.Cursor = System.Windows.Forms.Cursors.Default;
+            this.ButtonPlayerHat.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.ButtonPlayerHat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ButtonPlayerHat.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.ButtonPlayerHat.Location = new System.Drawing.Point(107, 14);
+            this.ButtonPlayerHat.Name = "ButtonPlayerHat";
+            this.ButtonPlayerHat.Size = new System.Drawing.Size(81, 23);
+            this.ButtonPlayerHat.TabIndex = 11;
+            this.ButtonPlayerHat.Text = "Change";
+            this.ButtonPlayerHat.UseVisualStyleBackColor = false;
+            this.ButtonPlayerHat.Click += new System.EventHandler(this.ButtonPlayerHat_Click);
+            // 
+            // groupBoxVoteTime
+            // 
+            this.groupBoxVoteTime.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.groupBoxVoteTime.Controls.Add(this.numericVoteTime);
+            this.groupBoxVoteTime.Controls.Add(this.ButtonVoteTime);
+            this.groupBoxVoteTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.groupBoxVoteTime.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.groupBoxVoteTime.Location = new System.Drawing.Point(19, 108);
+            this.groupBoxVoteTime.Margin = new System.Windows.Forms.Padding(2);
+            this.groupBoxVoteTime.Name = "groupBoxVoteTime";
+            this.groupBoxVoteTime.Padding = new System.Windows.Forms.Padding(1);
+            this.groupBoxVoteTime.Size = new System.Drawing.Size(200, 46);
+            this.groupBoxVoteTime.TabIndex = 23;
+            this.groupBoxVoteTime.TabStop = false;
+            this.groupBoxVoteTime.Text = "Vote Time";
+            // 
+            // numericVoteTime
+            // 
+            this.numericVoteTime.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
+            this.numericVoteTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.numericVoteTime.ForeColor = System.Drawing.Color.Lime;
+            this.numericVoteTime.Location = new System.Drawing.Point(65, 17);
+            this.numericVoteTime.Name = "numericVoteTime";
+            this.numericVoteTime.Size = new System.Drawing.Size(36, 20);
+            this.numericVoteTime.TabIndex = 3;
+            this.numericVoteTime.Value = new decimal(new int[] {
+            2,
+            0,
+            0,
+            0});
+            // 
+            // ButtonVoteTime
+            // 
+            this.ButtonVoteTime.BackColor = System.Drawing.Color.LightSeaGreen;
+            this.ButtonVoteTime.Cursor = System.Windows.Forms.Cursors.Default;
+            this.ButtonVoteTime.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.ButtonVoteTime.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ButtonVoteTime.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.ButtonVoteTime.Location = new System.Drawing.Point(107, 14);
+            this.ButtonVoteTime.Name = "ButtonVoteTime";
+            this.ButtonVoteTime.Size = new System.Drawing.Size(81, 23);
+            this.ButtonVoteTime.TabIndex = 11;
+            this.ButtonVoteTime.Text = "Change ";
+            this.ButtonVoteTime.UseVisualStyleBackColor = false;
+            this.ButtonVoteTime.Click += new System.EventHandler(this.ButtonVoteTime_Click);
+            // 
+            // groupBoxDiscussion
+            // 
+            this.groupBoxDiscussion.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.groupBoxDiscussion.Controls.Add(this.numericDiscussion);
+            this.groupBoxDiscussion.Controls.Add(this.ButtonDiscussion);
+            this.groupBoxDiscussion.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.groupBoxDiscussion.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.groupBoxDiscussion.Location = new System.Drawing.Point(19, 58);
+            this.groupBoxDiscussion.Margin = new System.Windows.Forms.Padding(2);
+            this.groupBoxDiscussion.Name = "groupBoxDiscussion";
+            this.groupBoxDiscussion.Padding = new System.Windows.Forms.Padding(1);
+            this.groupBoxDiscussion.Size = new System.Drawing.Size(200, 46);
+            this.groupBoxDiscussion.TabIndex = 23;
+            this.groupBoxDiscussion.TabStop = false;
+            this.groupBoxDiscussion.Text = "Discussion";
+            // 
+            // numericDiscussion
+            // 
+            this.numericDiscussion.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
+            this.numericDiscussion.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.numericDiscussion.ForeColor = System.Drawing.Color.Lime;
+            this.numericDiscussion.Location = new System.Drawing.Point(65, 17);
+            this.numericDiscussion.Name = "numericDiscussion";
+            this.numericDiscussion.Size = new System.Drawing.Size(36, 20);
+            this.numericDiscussion.TabIndex = 3;
+            this.numericDiscussion.Value = new decimal(new int[] {
+            2,
+            0,
+            0,
+            0});
+            // 
+            // ButtonDiscussion
+            // 
+            this.ButtonDiscussion.BackColor = System.Drawing.Color.LightSeaGreen;
+            this.ButtonDiscussion.Cursor = System.Windows.Forms.Cursors.Default;
+            this.ButtonDiscussion.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.ButtonDiscussion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ButtonDiscussion.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.ButtonDiscussion.Location = new System.Drawing.Point(107, 14);
+            this.ButtonDiscussion.Name = "ButtonDiscussion";
+            this.ButtonDiscussion.Size = new System.Drawing.Size(81, 23);
+            this.ButtonDiscussion.TabIndex = 11;
+            this.ButtonDiscussion.Text = "Change";
+            this.ButtonDiscussion.UseVisualStyleBackColor = false;
+            this.ButtonDiscussion.Click += new System.EventHandler(this.ButtonDiscussion_Click);
+            // 
+            // groupBoxEmergency
+            // 
+            this.groupBoxEmergency.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.groupBoxEmergency.Controls.Add(this.numericEmegency);
+            this.groupBoxEmergency.Controls.Add(this.ButtonEmergency);
+            this.groupBoxEmergency.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.groupBoxEmergency.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.groupBoxEmergency.Location = new System.Drawing.Point(19, 8);
+            this.groupBoxEmergency.Margin = new System.Windows.Forms.Padding(2);
+            this.groupBoxEmergency.Name = "groupBoxEmergency";
+            this.groupBoxEmergency.Padding = new System.Windows.Forms.Padding(1);
+            this.groupBoxEmergency.Size = new System.Drawing.Size(200, 46);
+            this.groupBoxEmergency.TabIndex = 23;
+            this.groupBoxEmergency.TabStop = false;
+            this.groupBoxEmergency.Text = "Emergency";
+            // 
+            // numericEmegency
+            // 
+            this.numericEmegency.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
+            this.numericEmegency.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.numericEmegency.ForeColor = System.Drawing.Color.Lime;
+            this.numericEmegency.Location = new System.Drawing.Point(65, 17);
+            this.numericEmegency.Name = "numericEmegency";
+            this.numericEmegency.Size = new System.Drawing.Size(36, 20);
+            this.numericEmegency.TabIndex = 3;
+            this.numericEmegency.Value = new decimal(new int[] {
+            2,
+            0,
+            0,
+            0});
+            // 
+            // ButtonEmergency
+            // 
+            this.ButtonEmergency.BackColor = System.Drawing.Color.LightSeaGreen;
+            this.ButtonEmergency.Cursor = System.Windows.Forms.Cursors.Default;
+            this.ButtonEmergency.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.ButtonEmergency.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ButtonEmergency.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.ButtonEmergency.Location = new System.Drawing.Point(107, 14);
+            this.ButtonEmergency.Name = "ButtonEmergency";
+            this.ButtonEmergency.Size = new System.Drawing.Size(81, 23);
+            this.ButtonEmergency.TabIndex = 11;
+            this.ButtonEmergency.Text = "Change";
+            this.ButtonEmergency.UseVisualStyleBackColor = false;
+            this.ButtonEmergency.Click += new System.EventHandler(this.ButtonEmergency_Click);
+            // 
+            // ButtonReload
+            // 
+            this.ButtonReload.BackColor = System.Drawing.Color.Lime;
+            this.ButtonReload.Cursor = System.Windows.Forms.Cursors.Default;
+            this.ButtonReload.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.ButtonReload.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ButtonReload.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.ButtonReload.Location = new System.Drawing.Point(154, 316);
+            this.ButtonReload.Name = "ButtonReload";
+            this.ButtonReload.Size = new System.Drawing.Size(106, 23);
+            this.ButtonReload.TabIndex = 20;
+            this.ButtonReload.Text = "Reload Data";
+            this.ButtonReload.UseVisualStyleBackColor = false;
+            this.ButtonReload.Click += new System.EventHandler(this.ButtonReload_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.ClientSize = new System.Drawing.Size(284, 361);
+            this.ClientSize = new System.Drawing.Size(617, 363);
             this.Controls.Add(this.splitContainer1);
             this.Cursor = System.Windows.Forms.Cursors.Default;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
@@ -771,18 +788,18 @@ namespace Among_Us_ServerSetting
             this.splitContainer1.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
             this.splitContainer1.ResumeLayout(false);
-            this.groupBoxEmergency.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.numericEmegency)).EndInit();
-            this.groupBoxDiscussion.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.numericDiscussion)).EndInit();
-            this.groupBoxVoteTime.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.numericVoteTime)).EndInit();
-            this.groupBoxPlayerHat.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.numericPlayerHat)).EndInit();
-            this.groupBoxPlayerPet.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.numericPlayerPet)).EndInit();
             this.groupBoxPlayerCloth.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.numericPlayerCloth)).EndInit();
+            this.groupBoxPlayerPet.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.numericPlayerPet)).EndInit();
+            this.groupBoxPlayerHat.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.numericPlayerHat)).EndInit();
+            this.groupBoxVoteTime.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.numericVoteTime)).EndInit();
+            this.groupBoxDiscussion.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.numericDiscussion)).EndInit();
+            this.groupBoxEmergency.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.numericEmegency)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -827,6 +844,7 @@ namespace Among_Us_ServerSetting
         private System.Windows.Forms.GroupBox groupBoxEmergency;
         private System.Windows.Forms.NumericUpDown numericEmegency;
         private System.Windows.Forms.Button ButtonEmergency;
+        private System.Windows.Forms.Button ButtonReload;
     }
 }
 

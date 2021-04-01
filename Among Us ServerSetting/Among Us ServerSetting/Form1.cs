@@ -14,6 +14,21 @@ namespace Among_Us_ServerSetting
     public partial class Form1 : Form
     {
         Memory.Mem memory = new Memory.Mem();
+        private static string addressMainOffsetServerSetting = "GameAssembly.dll+028D7458,5C,14,";
+        private static string addressOffsetMap = "10";
+        private static string addressOffsetImpostor = "38";
+        private static string addressOffsetPlayerSpeed = "14";
+        private static string addressOffsetCrewVison = "18";
+        private static string addressOffsetImpostorVison = "1C";
+        private static string addressOffsetKillCooldown = "20";
+        private static string addressOffsetEmegency = "34";
+        private static string addressOffsetDiscussion = "44";
+        private static string addressOffsetVoteTime = "48";
+        private static string addressOffsetPlayerSetting = "GameAssembly.dll+028D0DB8,28,5C,";
+        private static string addressOffsetPlayerHat = "48";
+        private static string addressOffsetPlayerCloth = "4C";
+        private static string addressOffsetPlayerPet = "44";
+        private static string addressOffsetPlayerColor = "40";
         public Form1()
         {
             InitializeComponent();
@@ -22,34 +37,39 @@ namespace Among_Us_ServerSetting
                         "Polus",
                         "dlekS ehT - not work ",
                         "AirShip"});
-            splitContainer1.Panel2.Enabled = false;
+
             try
             {
                 MemoryOpenProcess();
+                MemoryReadOptionsGame();
             }
             catch (Exception)
             {
                 Application.Run(new FormErrorOpenProcess());
             }
+            
 
 
         }
         public void MemoryOpenProcess()
         {
             memory.OpenProcess(Process.GetProcessesByName("Among Us").FirstOrDefault().Id);
-            comboBoxMap.SelectedIndex = memory.ReadInt("GameAssembly.dll+02C6C4B8,5C,14,10");
-            numericImpostor.Value = memory.ReadInt("GameAssembly.dll+02C6C310,5C,4,38");
-            numericPlayerSpeed.Value = Math.Round((decimal)memory.ReadFloat("GameAssembly.dll+02C6C4B8,5C,14,14"),2);
-            numericCrewVison.Value = Math.Round((decimal)memory.ReadFloat("GameAssembly.dll+02C6C310,5C,4,18"),2);
-            numericImpostorVison.Value = Math.Round((decimal)memory.ReadFloat("GameAssembly.dll+02C6C4B8,5C,14,1C"),2);
-            numericKillCooldown.Value = Math.Round((decimal)memory.ReadFloat("GameAssembly.dll+02C6C4B8,5C,14,20"),2);
-            numericEmegency.Value = memory.ReadInt("GameAssembly.dll+02C6C4B8,5C,14,34");
-            numericDiscussion.Value = memory.ReadInt("GameAssembly.dll+02C6C4B8,5C,14,44");
-            numericVoteTime.Value = memory.ReadInt("GameAssembly.dll+02C616F8,5C,24,44");
-            numericPlayerHat.Value = memory.ReadInt("GameAssembly.dll+02C6C504,5C,40");
-            numericPlayerPet.Value = memory.ReadInt("GameAssembly.dll+02C6C504,5C,3C");
-            numericPlayerCloth.Value = memory.ReadInt("GameAssembly.dll+02C6C504,5C,44");
+        }
 
+        public void MemoryReadOptionsGame()
+        {
+            comboBoxMap.SelectedIndex = memory.ReadInt(addressMainOffsetServerSetting+addressOffsetMap);
+            numericImpostor.Value = memory.ReadInt(addressMainOffsetServerSetting+addressOffsetImpostor);
+            numericPlayerSpeed.Value = Math.Round((decimal)memory.ReadFloat(addressMainOffsetServerSetting+addressOffsetPlayerSpeed), 2);
+            numericCrewVison.Value = Math.Round((decimal)memory.ReadFloat(addressMainOffsetServerSetting+addressOffsetCrewVison), 2);
+            numericImpostorVison.Value = Math.Round((decimal)memory.ReadFloat(addressMainOffsetServerSetting+addressOffsetImpostorVison), 2);
+            numericKillCooldown.Value = Math.Round((decimal)memory.ReadFloat(addressMainOffsetServerSetting+addressOffsetKillCooldown), 2);
+            numericEmegency.Value = memory.ReadInt(addressMainOffsetServerSetting+addressOffsetEmegency);
+            numericDiscussion.Value = memory.ReadInt(addressMainOffsetServerSetting+addressOffsetDiscussion);
+            numericVoteTime.Value = memory.ReadInt(addressMainOffsetServerSetting+addressOffsetVoteTime);
+            numericPlayerHat.Value = memory.ReadInt(addressOffsetPlayerSetting + addressOffsetPlayerHat);
+            numericPlayerPet.Value = memory.ReadInt(addressOffsetPlayerSetting + addressOffsetPlayerPet);
+            numericPlayerCloth.Value = memory.ReadInt(addressOffsetPlayerSetting + addressOffsetPlayerCloth);
         }
 
         private void ButtonMore_Click(object sender, EventArgs e)
@@ -69,62 +89,68 @@ namespace Among_Us_ServerSetting
         }
         private void ButtonMap_Click(object sender, EventArgs e)
         {
-            memory.WriteMemory("GameAssembly.dll+02C6C4B8,5C,14,10", "int", comboBoxMap.SelectedIndex.ToString());
+            memory.WriteMemory(addressMainOffsetServerSetting+addressOffsetMap, "int", comboBoxMap.SelectedIndex.ToString());
         }
 
         private void ButtonImpostor_Click(object sender, EventArgs e)
         {
-            memory.WriteMemory("GameAssembly.dll+02C6C310,5C,4,38", "int", numericImpostor.Value.ToString());
+            memory.WriteMemory(addressMainOffsetServerSetting+addressOffsetImpostor, "int", numericImpostor.Value.ToString());
         }
 
         private void ButtonPlayerSpeed_Click(object sender, EventArgs e)
         {
-            memory.WriteMemory("GameAssembly.dll+02C6C4B8,5C,14,14", "float", numericPlayerSpeed.Value.ToString());
+            memory.WriteMemory(addressMainOffsetServerSetting+addressOffsetPlayerSpeed, "float", numericPlayerSpeed.Value.ToString());
         }
 
         private void ButtonCrewVison_Click(object sender, EventArgs e)
         {
-            memory.WriteMemory("GameAssembly.dll+02C6C310,5C,4,18", "float", numericCrewVison.Value.ToString());
+            memory.WriteMemory(addressMainOffsetServerSetting+addressOffsetCrewVison, "float", numericCrewVison.Value.ToString());
+            
         }
 
         private void ButtonImpostorVison_Click(object sender, EventArgs e)
         {
-            memory.WriteMemory("GameAssembly.dll+02C6C4B8,5C,14,1C", "float", numericImpostorVison.Value.ToString());
+            memory.WriteMemory(addressMainOffsetServerSetting+addressOffsetImpostorVison, "float", numericImpostorVison.Value.ToString());
         }
         
         private void ButonKillCoolDown_Click(object sender, EventArgs e)
         {
-            memory.WriteMemory("GameAssembly.dll+02C6C4B8,5C,14,20", "float", numericKillCooldown.Value.ToString());
+            memory.WriteMemory(addressMainOffsetServerSetting+addressOffsetKillCooldown, "float", numericKillCooldown.Value.ToString());
         }
 
         private void ButtonEmergency_Click(object sender, EventArgs e)
         {
-            memory.WriteMemory("GameAssembly.dll+02C6C4B8,5C,14,34", "int", numericEmegency.Value.ToString());
+            memory.WriteMemory(addressMainOffsetServerSetting+addressOffsetEmegency, "int", numericEmegency.Value.ToString());
         }
 
         private void ButtonDiscussion_Click(object sender, EventArgs e)
         {
-            memory.WriteMemory("GameAssembly.dll+02C6C4B8,5C,14,44", "int", numericDiscussion.Value.ToString());
+            memory.WriteMemory(addressMainOffsetServerSetting+addressOffsetDiscussion, "int", numericDiscussion.Value.ToString());
         }
 
         private void ButtonVoteTime_Click(object sender, EventArgs e)
         {
-            memory.WriteMemory("GameAssembly.dll+02C616F8,5C,24,44", "int", numericVoteTime.Value.ToString());
+            memory.WriteMemory(addressMainOffsetServerSetting+addressOffsetVoteTime, "int", numericVoteTime.Value.ToString());
         }
 
         private void ButtonPlayerHat_Click(object sender, EventArgs e)
         {
-            memory.WriteMemory("GameAssembly.dll+02C6C504,5C,40", "int", numericPlayerHat.Value.ToString());
+            memory.WriteMemory(addressOffsetPlayerSetting + addressOffsetPlayerHat, "int", numericPlayerHat.Value.ToString());
         }
 
         private void ButtonPlayerPet_Click(object sender, EventArgs e)
         {
-            memory.WriteMemory("GameAssembly.dll+02C6C504,5C,3C", "int", numericPlayerPet.Value.ToString());
+            memory.WriteMemory(addressOffsetPlayerSetting + addressOffsetPlayerPet, "int", numericPlayerPet.Value.ToString());
         }
 
         private void ButtonPlayerCloth_Click(object sender, EventArgs e)
         {
-            memory.WriteMemory("GameAssembly.dll+02C6C504,5C,44", "int", numericPlayerCloth.Value.ToString());
+            memory.WriteMemory(addressOffsetPlayerSetting + addressOffsetPlayerCloth, "int", numericPlayerCloth.Value.ToString());
+        }
+
+        private void ButtonReload_Click(object sender, EventArgs e)
+        {
+            MemoryReadOptionsGame();
         }
     }
 }

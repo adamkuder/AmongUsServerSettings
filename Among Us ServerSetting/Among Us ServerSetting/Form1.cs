@@ -50,6 +50,7 @@ namespace Among_Us_ServerSetting
             
 
 
+
         }
         public void MemoryOpenProcess()
         {
@@ -130,7 +131,7 @@ namespace Among_Us_ServerSetting
 
         private void ButtonVoteTime_Click(object sender, EventArgs e)
         {
-            memory.WriteMemory(addressMainOffsetServerSetting+addressOffsetVoteTime, "int", numericVoteTime.Value.ToString());
+            memory.WriteMemory(addressMainOffsetServerSetting + addressOffsetVoteTime, "int", numericVoteTime.Value.ToString());
         }
 
         private void ButtonPlayerHat_Click(object sender, EventArgs e)

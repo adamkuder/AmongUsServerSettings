@@ -41,13 +41,14 @@ namespace Among_Us_ServerSetting
             try
             {
                 MemoryOpenProcess();
-                MemoryReadOptionsGame();
+                
             }
             catch (Exception)
             {
                 Application.Run(new FormErrorOpenProcess());
             }
-            
+            MemoryReadOptionsGame();
+
 
 
 
@@ -59,15 +60,15 @@ namespace Among_Us_ServerSetting
 
         public void MemoryReadOptionsGame()
         {
-            comboBoxMap.SelectedIndex = memory.ReadInt(addressMainOffsetServerSetting+addressOffsetMap);
-            numericImpostor.Value = memory.ReadInt(addressMainOffsetServerSetting+addressOffsetImpostor);
-            numericPlayerSpeed.Value = Math.Round((decimal)memory.ReadFloat(addressMainOffsetServerSetting+addressOffsetPlayerSpeed), 2);
-            numericCrewVison.Value = Math.Round((decimal)memory.ReadFloat(addressMainOffsetServerSetting+addressOffsetCrewVison), 2);
-            numericImpostorVison.Value = Math.Round((decimal)memory.ReadFloat(addressMainOffsetServerSetting+addressOffsetImpostorVison), 2);
-            numericKillCooldown.Value = Math.Round((decimal)memory.ReadFloat(addressMainOffsetServerSetting+addressOffsetKillCooldown), 2);
-            numericEmegency.Value = memory.ReadInt(addressMainOffsetServerSetting+addressOffsetEmegency);
-            numericDiscussion.Value = memory.ReadInt(addressMainOffsetServerSetting+addressOffsetDiscussion);
-            numericVoteTime.Value = memory.ReadInt(addressMainOffsetServerSetting+addressOffsetVoteTime);
+            comboBoxMap.SelectedIndex = memory.ReadInt(addressMainOffsetServerSetting + addressOffsetMap);
+            numericImpostor.Value = memory.ReadInt(addressMainOffsetServerSetting + addressOffsetImpostor);
+            numericPlayerSpeed.Value = Math.Round((decimal)memory.ReadFloat(addressMainOffsetServerSetting + addressOffsetPlayerSpeed), 2);
+            numericCrewVison.Value = Math.Round((decimal)memory.ReadFloat(addressMainOffsetServerSetting + addressOffsetCrewVison), 2);
+            numericImpostorVison.Value = Math.Round((decimal)memory.ReadFloat(addressMainOffsetServerSetting + addressOffsetImpostorVison), 2);
+            numericKillCooldown.Value = Math.Round((decimal)memory.ReadFloat(addressMainOffsetServerSetting + addressOffsetKillCooldown), 2);
+            numericEmegency.Value = memory.ReadInt(addressMainOffsetServerSetting + addressOffsetEmegency);
+            numericDiscussion.Value = memory.ReadInt(addressMainOffsetServerSetting + addressOffsetDiscussion);
+            numericVoteTime.Value = memory.ReadInt(addressMainOffsetServerSetting + addressOffsetVoteTime);
             numericPlayerHat.Value = memory.ReadInt(addressOffsetPlayerSetting + addressOffsetPlayerHat);
             numericPlayerPet.Value = memory.ReadInt(addressOffsetPlayerSetting + addressOffsetPlayerPet);
             numericPlayerCloth.Value = memory.ReadInt(addressOffsetPlayerSetting + addressOffsetPlayerCloth);

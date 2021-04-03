@@ -49,6 +49,7 @@ namespace Among_Us_ServerSetting
             this.groupBoxImpostor = new System.Windows.Forms.GroupBox();
             this.label1 = new System.Windows.Forms.Label();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
+            this.ButtonReload = new System.Windows.Forms.Button();
             this.ButtonMore = new System.Windows.Forms.Button();
             this.groupBoxPlayerCloth = new System.Windows.Forms.GroupBox();
             this.numericPlayerCloth = new System.Windows.Forms.NumericUpDown();
@@ -68,7 +69,6 @@ namespace Among_Us_ServerSetting
             this.groupBoxEmergency = new System.Windows.Forms.GroupBox();
             this.numericEmegency = new System.Windows.Forms.NumericUpDown();
             this.ButtonEmergency = new System.Windows.Forms.Button();
-            this.ButtonReload = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.numericImpostor)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericPlayerSpeed)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericImpostorVison)).BeginInit();
@@ -454,6 +454,21 @@ namespace Among_Us_ServerSetting
             this.splitContainer1.SplitterDistance = 274;
             this.splitContainer1.TabIndex = 24;
             // 
+            // ButtonReload
+            // 
+            this.ButtonReload.BackColor = System.Drawing.Color.Lime;
+            this.ButtonReload.Cursor = System.Windows.Forms.Cursors.Default;
+            this.ButtonReload.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.ButtonReload.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ButtonReload.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.ButtonReload.Location = new System.Drawing.Point(154, 316);
+            this.ButtonReload.Name = "ButtonReload";
+            this.ButtonReload.Size = new System.Drawing.Size(106, 23);
+            this.ButtonReload.TabIndex = 20;
+            this.ButtonReload.Text = "Reload Data";
+            this.ButtonReload.UseVisualStyleBackColor = false;
+            this.ButtonReload.Click += new System.EventHandler(this.ButtonReload_Click);
+            // 
             // ButtonMore
             // 
             this.ButtonMore.BackgroundImage = global::Among_Us_ServerSetting.Properties.Resources.more;
@@ -489,9 +504,14 @@ namespace Among_Us_ServerSetting
             this.numericPlayerCloth.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
             this.numericPlayerCloth.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.numericPlayerCloth.ForeColor = System.Drawing.Color.Lime;
-            this.numericPlayerCloth.Location = new System.Drawing.Point(65, 17);
+            this.numericPlayerCloth.Location = new System.Drawing.Point(55, 17);
+            this.numericPlayerCloth.Maximum = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
             this.numericPlayerCloth.Name = "numericPlayerCloth";
-            this.numericPlayerCloth.Size = new System.Drawing.Size(36, 20);
+            this.numericPlayerCloth.Size = new System.Drawing.Size(46, 20);
             this.numericPlayerCloth.TabIndex = 3;
             this.numericPlayerCloth.Value = new decimal(new int[] {
             2,
@@ -535,9 +555,14 @@ namespace Among_Us_ServerSetting
             this.numericPlayerPet.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
             this.numericPlayerPet.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.numericPlayerPet.ForeColor = System.Drawing.Color.Lime;
-            this.numericPlayerPet.Location = new System.Drawing.Point(65, 17);
+            this.numericPlayerPet.Location = new System.Drawing.Point(55, 17);
+            this.numericPlayerPet.Maximum = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
             this.numericPlayerPet.Name = "numericPlayerPet";
-            this.numericPlayerPet.Size = new System.Drawing.Size(36, 20);
+            this.numericPlayerPet.Size = new System.Drawing.Size(46, 20);
             this.numericPlayerPet.TabIndex = 3;
             this.numericPlayerPet.Value = new decimal(new int[] {
             2,
@@ -581,9 +606,14 @@ namespace Among_Us_ServerSetting
             this.numericPlayerHat.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
             this.numericPlayerHat.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.numericPlayerHat.ForeColor = System.Drawing.Color.Lime;
-            this.numericPlayerHat.Location = new System.Drawing.Point(65, 17);
+            this.numericPlayerHat.Location = new System.Drawing.Point(55, 17);
+            this.numericPlayerHat.Maximum = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
             this.numericPlayerHat.Name = "numericPlayerHat";
-            this.numericPlayerHat.Size = new System.Drawing.Size(36, 20);
+            this.numericPlayerHat.Size = new System.Drawing.Size(46, 20);
             this.numericPlayerHat.TabIndex = 3;
             this.numericPlayerHat.Value = new decimal(new int[] {
             2,
@@ -628,6 +658,11 @@ namespace Among_Us_ServerSetting
             this.numericVoteTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.numericVoteTime.ForeColor = System.Drawing.Color.Lime;
             this.numericVoteTime.Location = new System.Drawing.Point(65, 17);
+            this.numericVoteTime.Maximum = new decimal(new int[] {
+            10000,
+            0,
+            0,
+            0});
             this.numericVoteTime.Name = "numericVoteTime";
             this.numericVoteTime.Size = new System.Drawing.Size(36, 20);
             this.numericVoteTime.TabIndex = 3;
@@ -674,6 +709,11 @@ namespace Among_Us_ServerSetting
             this.numericDiscussion.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.numericDiscussion.ForeColor = System.Drawing.Color.Lime;
             this.numericDiscussion.Location = new System.Drawing.Point(65, 17);
+            this.numericDiscussion.Maximum = new decimal(new int[] {
+            10000,
+            0,
+            0,
+            0});
             this.numericDiscussion.Name = "numericDiscussion";
             this.numericDiscussion.Size = new System.Drawing.Size(36, 20);
             this.numericDiscussion.TabIndex = 3;
@@ -720,6 +760,11 @@ namespace Among_Us_ServerSetting
             this.numericEmegency.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.numericEmegency.ForeColor = System.Drawing.Color.Lime;
             this.numericEmegency.Location = new System.Drawing.Point(65, 17);
+            this.numericEmegency.Maximum = new decimal(new int[] {
+            10000,
+            0,
+            0,
+            0});
             this.numericEmegency.Name = "numericEmegency";
             this.numericEmegency.Size = new System.Drawing.Size(36, 20);
             this.numericEmegency.TabIndex = 3;
@@ -743,21 +788,6 @@ namespace Among_Us_ServerSetting
             this.ButtonEmergency.Text = "Change";
             this.ButtonEmergency.UseVisualStyleBackColor = false;
             this.ButtonEmergency.Click += new System.EventHandler(this.ButtonEmergency_Click);
-            // 
-            // ButtonReload
-            // 
-            this.ButtonReload.BackColor = System.Drawing.Color.Lime;
-            this.ButtonReload.Cursor = System.Windows.Forms.Cursors.Default;
-            this.ButtonReload.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.ButtonReload.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ButtonReload.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.ButtonReload.Location = new System.Drawing.Point(154, 316);
-            this.ButtonReload.Name = "ButtonReload";
-            this.ButtonReload.Size = new System.Drawing.Size(106, 23);
-            this.ButtonReload.TabIndex = 20;
-            this.ButtonReload.Text = "Reload Data";
-            this.ButtonReload.UseVisualStyleBackColor = false;
-            this.ButtonReload.Click += new System.EventHandler(this.ButtonReload_Click);
             // 
             // Form1
             // 

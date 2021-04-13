@@ -51,6 +51,8 @@ namespace Among_Us_ServerSetting
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.ButtonReload = new System.Windows.Forms.Button();
             this.ButtonMore = new System.Windows.Forms.Button();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBoxPlayerCloth = new System.Windows.Forms.GroupBox();
             this.numericPlayerCloth = new System.Windows.Forms.NumericUpDown();
             this.ButtonPlayerCloth = new System.Windows.Forms.Button();
@@ -84,6 +86,8 @@ namespace Among_Us_ServerSetting
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
             this.splitContainer1.SuspendLayout();
+            this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBoxPlayerCloth.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericPlayerCloth)).BeginInit();
             this.groupBoxPlayerPet.SuspendLayout();
@@ -444,14 +448,15 @@ namespace Among_Us_ServerSetting
             // splitContainer1.Panel2
             // 
             this.splitContainer1.Panel2.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.splitContainer1.Panel2.Controls.Add(this.groupBox1);
             this.splitContainer1.Panel2.Controls.Add(this.groupBoxPlayerCloth);
             this.splitContainer1.Panel2.Controls.Add(this.groupBoxPlayerPet);
             this.splitContainer1.Panel2.Controls.Add(this.groupBoxPlayerHat);
             this.splitContainer1.Panel2.Controls.Add(this.groupBoxVoteTime);
             this.splitContainer1.Panel2.Controls.Add(this.groupBoxDiscussion);
             this.splitContainer1.Panel2.Controls.Add(this.groupBoxEmergency);
-            this.splitContainer1.Size = new System.Drawing.Size(525, 346);
-            this.splitContainer1.SplitterDistance = 274;
+            this.splitContainer1.Size = new System.Drawing.Size(738, 346);
+            this.splitContainer1.SplitterDistance = 269;
             this.splitContainer1.TabIndex = 24;
             // 
             // ButtonReload
@@ -482,6 +487,29 @@ namespace Among_Us_ServerSetting
             this.ButtonMore.TabIndex = 26;
             this.ButtonMore.UseVisualStyleBackColor = true;
             this.ButtonMore.Click += new System.EventHandler(this.ButtonMore_Click);
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.groupBox1.Controls.Add(this.pictureBox1);
+            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.groupBox1.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.groupBox1.Location = new System.Drawing.Point(242, 8);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(1);
+            this.groupBox1.Size = new System.Drawing.Size(200, 296);
+            this.groupBox1.TabIndex = 24;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Player Color(Future)";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Location = new System.Drawing.Point(14, 17);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(30, 30);
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
             // 
             // groupBoxPlayerCloth
             // 
@@ -795,7 +823,7 @@ namespace Among_Us_ServerSetting
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.ClientSize = new System.Drawing.Size(617, 363);
+            this.ClientSize = new System.Drawing.Size(514, 363);
             this.Controls.Add(this.splitContainer1);
             this.Cursor = System.Windows.Forms.Cursors.Default;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
@@ -818,6 +846,8 @@ namespace Among_Us_ServerSetting
             this.splitContainer1.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
             this.splitContainer1.ResumeLayout(false);
+            this.groupBox1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.groupBoxPlayerCloth.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.numericPlayerCloth)).EndInit();
             this.groupBoxPlayerPet.ResumeLayout(false);
@@ -875,6 +905,8 @@ namespace Among_Us_ServerSetting
         private System.Windows.Forms.NumericUpDown numericEmegency;
         private System.Windows.Forms.Button ButtonEmergency;
         private System.Windows.Forms.Button ButtonReload;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
 

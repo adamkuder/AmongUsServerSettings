@@ -14,7 +14,7 @@ namespace Among_Us_ServerSetting
     public partial class Form1 : Form
     {
         Memory.Mem memory = new Memory.Mem();
-        private static string addressMainOffsetServerSetting = "GameAssembly.dll+028D7458,5C,14,";
+        private static string addressMainOffsetServerSetting = "GameAssembly.dll+028801B8,5C,4,";
         private static string addressOffsetMap = "10";
         private static string addressOffsetImpostor = "38";
         private static string addressOffsetPlayerSpeed = "14";
@@ -24,11 +24,11 @@ namespace Among_Us_ServerSetting
         private static string addressOffsetEmegency = "34";
         private static string addressOffsetDiscussion = "44";
         private static string addressOffsetVoteTime = "48";
-        private static string addressOffsetPlayerSetting = "GameAssembly.dll+028D0DB8,28,5C,";
-        private static string addressOffsetPlayerHat = "48";
-        private static string addressOffsetPlayerCloth = "4C";
-        private static string addressOffsetPlayerPet = "44";
-        private static string addressOffsetPlayerColor = "40";
+        private static string addressOffsetPlayerSetting = "GameAssembly.dll+0286FE8C,28,5C,";
+        private static string addressOffsetPlayerHat = "4C";
+        private static string addressOffsetPlayerCloth = "50";
+        private static string addressOffsetPlayerPet = "48";
+        private static string addressOffsetPlayerColor = "44";
         public Form1()
         {
             InitializeComponent();
@@ -80,7 +80,7 @@ namespace Among_Us_ServerSetting
             {
                 splitContainer1.Panel2.Show();
                 splitContainer1.Panel2.Enabled = true;
-                Size = new Size(550, 400);
+                Size = new Size(530, 400);
             }
             else
             {
